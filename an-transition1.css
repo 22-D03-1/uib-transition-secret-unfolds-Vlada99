@@ -1,0 +1,49 @@
+* {box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+html,body {height: 100%;}
+
+body {display: flex;
+  justify-content: center;
+  align-items: center;}
+h1 {font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: 400;}
+main {width: 400px;
+  aspect-ratio: 1/1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+main div {width: 50%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  transition-duration: 1s;}
+main div:nth-child(2) {
+  background-color: steelblue;
+  top: 0;
+  left: 0;}
+main:hover div:nth-child(2) {
+  transform: translateX(-100%) rotate(90deg);
+}  
+main div:nth-child(3) {
+  background-color: dimgray;
+  top: 0;
+  right: 0;}
+main:hover div:nth-child(3) {
+  transform: translateX(100%) rotate(-90deg);
+} 
+main div:nth-child(4) {
+  background-color: yellow;
+  bottom: 0;
+  left: 0;}
+main:hover div:nth-child(4) {
+  transform: translateX(-100%) rotate(-90deg);
+}   
+main div:nth-child(5) {
+  background-color: rosybrown;
+  bottom: 0;
+  right: 0;}
+main:hover div:nth-child(5) {
+  transform: translateX(100%) rotate(90deg);}  
+  
